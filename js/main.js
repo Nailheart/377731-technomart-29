@@ -41,7 +41,6 @@ $(document).ready(function(){
     });
   }
 
-
   $('.delivery-btn').click(function(event) {
     event.preventDefault();
 
@@ -71,6 +70,4 @@ $(document).ready(function(){
     let desc = document.querySelector('.slider-services-description');
     desc.innerHTML = 'Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.';
   });
-
-
 });
