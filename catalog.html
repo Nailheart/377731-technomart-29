@@ -80,14 +80,14 @@
   <!-- Main -->
   <main class="main">
   	<ul class="breadcrumbs container">
-  		<li>
-  			<a class="breadcrumbs-link breadcrumbs-main" href="index.html">Главная</a>
+  		<li class="breadcrumbs-home">
+  			<a href="index.html" aria-label="Главная"></a>
   		</li>
   		<li>
-  			<a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+  			<a href="catalog.html">Каталог</a>
   		</li>
   		<li>
-  			<a class="breadcrumbs-link" href="blank.html">Инструмент</a>
+  			<a href="blank.html">Инструмент</a>
   		</li>
   		<li>Перфораторы</li>
   	</ul>
@@ -101,8 +101,83 @@
 
   		<!-- Product-filter -->
   		<section class="product-filter">
-  			<h2>Фильтр товаров</h2>
-  			<!-- Здесь будет форма фильтра --> 
+  			<h2 class="visually-hidden">Фильтр товаров</h2>
+
+  			<form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+  				<div class="filter-title">
+  					<span>фильтр:</span>
+  				</div>
+
+  				<fieldset class="filter-item">
+  					<legend>Цена:</legend>
+
+  					<div class="range-filter">
+  						<div class="range-control">
+  							<div class="scale">
+  								<div class="bar"></div>
+  							</div>
+
+  							<div class="toggle toggle-min" tabindex="0"></div>
+  							<div class="toggle toggle-max" tabindex="0"></div>
+  						</div>
+
+  						<div class="price-control">
+  							<input type="number" name="min-price" value="0">
+  							<span>&mdash;</span>
+  							<input type="number" name="max-price" value="30000">
+  						</div>
+  					</div>
+  				</fieldset>
+
+  				<fieldset class="filter-item">
+  					<legend>Производители:</legend>
+
+  					<ul class="filter-checkbox-list">
+  						<li class="filter-option">
+  							<input id="filter-bosch" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" checked>
+  							<label for="filter-bosch">Bosch</label>
+  						</li>
+
+  						<li class="filter-option">
+  							<input id="filter-interskol" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interskol">
+  							<label for="filter-interskol">Интерскол</label>
+  						</li>
+
+  						<li class="filter-option">
+  							<input id="filter-makita" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" checked>
+  							<label for="filter-makita">Makita</label>
+  						</li>
+
+  						<li class="filter-option">
+  							<input id="filter-dewalt" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt">
+  							<label for="filter-dewalt">Dewalt</label>
+  						</li>
+
+  						<li class="filter-option">
+  							<input id="filter-hitachi" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi">
+  							<label for="filter-hitachi">Hitachi</label>
+  						</li>
+  					</ul>
+  				</fieldset>
+
+  				<fieldset class="filter-item border-none">
+  					<legend>Питание:</legend>
+
+  					<ul class="filter-radio-list">
+  						<li class="filter-option">
+  							<input id="filter-rechargeable" class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="rechargeable" checked>
+  							<label for="filter-rechargeable">Аккумуляторные</label>
+  						</li>
+
+  						<li class="filter-option">
+  							<input id="filter-network" class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="network">
+  							<label for="filter-network">Сетевые</label>
+  						</li>
+  					</ul>
+  				</fieldset>
+
+  				<input class="filter-button" type="submit" value="Показать">
+  			</form>
   		</section>
   		<!-- /Product-filter -->
 
@@ -287,7 +362,7 @@
   					<a href="#">3</a>
   				</li>
 
-  				<li class="pagination-item">
+  				<li class="pagination-item pagination-item-next">
   					<a href="#">Следующая</a>
   				</li>
   			</ul>
@@ -333,7 +408,7 @@
           <ul class="footer-nav">
             <li><a class="footer-nav-link" href="blank.html">Компания</a></li>
             <li><a class="footer-nav-link" href="blank.html">Новости</a></li>
-            <li><a class="footer-nav-link" href="blank.html">Каталог</a></li>
+            <li><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
             <li><a class="footer-nav-link" href="blank.html">Доставка</a></li>
             <li><a class="footer-nav-link" href="blank.html">Контакты</a></li>
           </ul>
@@ -380,6 +455,23 @@
     <!-- /footer-bottom -->
   </div>
   <!-- /Footer -->
+
+  <!-- Modal -->
+  <!-- Product-add -->
+  <section class="product-add">
+    <h2>Товар добавлен в корзину!</h2>
+
+    <div class="product-add-buttons">
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button button-continue" href="#">Продолжить покупки</a>
+    </div>
+
+    <button class="close-button">
+      <img src="img/icons-svg/close.svg" width="21" height="21" alt="Закрить окно">
+    </button>
+  </section>
+  <!-- /Product-add -->
+  <!-- /Modal -->
 
   <script src="js/main.js"></script>
 

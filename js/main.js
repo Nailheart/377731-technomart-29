@@ -1,21 +1,15 @@
 $(document).ready(function(){
-  // search field icon
-  $('.search-input').focus(function() {
-    $(this).parent().addClass('search-field-focus');
-    $(this).css('color', 'var(--black)');
-  }).blur(function() {
-      $(this).parent().removeClass('search-field-focus');
-      $(this).css('color', 'var(--white)');
-    });
 
-  // First slider
+  /*
+    Первый слайдер
+  */
   $(".owl-carousel").owlCarousel({
   	items: 1,
   	loop: true,
   	dots: false
   });
 
-  var owl = $('.owl-carousel');
+  const owl = $('.owl-carousel');
 	owl.owlCarousel();
 
 	$('.slider-next').click(function() {
@@ -25,16 +19,21 @@ $(document).ready(function(){
     owl.trigger('prev.owl.carousel', [0]);
   });
 
-  // Second slider
-  let buttonList = document.querySelectorAll('.slider-services-button');
+  /*
+    Второй слайдер
+  */
+  const buttonList = document.querySelectorAll('.slider-services-button');
 
+  /*
+      Удаляем класс у активной кнопки слайдера
+  */
   function removeActive() {
-    for (var i = 0; i < buttonList.length; i++) {
+    for (const i = 0; i < buttonList.length; i++) {
       buttonList[i].classList.remove('slider-button-active');
     }
   }
 
-  for (var i = 0; i < buttonList.length; i++) {
+  for (const i = 0; i < buttonList.length; i++) {
     buttonList[i].addEventListener('click', function(e) {
       removeActive();
       e.currentTarget.classList.add('slider-button-active');
