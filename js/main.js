@@ -28,12 +28,12 @@ $(document).ready(function(){
       Удаляем класс у активной кнопки слайдера
   */
   function removeActive() {
-    for (const i = 0; i < buttonList.length; i++) {
+    for (let i = 0; i < buttonList.length; i++) {
       buttonList[i].classList.remove('slider-button-active');
     }
   }
 
-  for (const i = 0; i < buttonList.length; i++) {
+  for (let i = 0; i < buttonList.length; i++) {
     buttonList[i].addEventListener('click', function(e) {
       removeActive();
       e.currentTarget.classList.add('slider-button-active');

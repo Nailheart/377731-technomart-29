@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Техномарт</title>
 
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- CSS -->
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
 
@@ -44,16 +48,16 @@
 
         <div class="login-info">
         	<div class="authorization-user">
-        		<a class="authorized-link" href="#">Равшан Джамшутович</a>
-        		<a class="deauthorization-link" href="#"></a>
+        		<a class="authorized-link" href="blank.html">Равшан Джамшутович</a>
+        		<a class="deauthorization-link" href="blank.html"></a>
         	</div>
 
         	<ul class="login-info-links">
         		<li>
-        			<a class="login-info-link" href="#">Мои заказы</a>
+        			<a class="login-info-link" href="blank.html">Мои заказы</a>
         		</li>
         		<li>
-        			<a class="login-info-link" href="#">Личный кабинет</a>
+        			<a class="login-info-link" href="blank.html">Личный кабинет</a>
         		</li>
         	</ul>
         </div>
@@ -132,7 +136,7 @@
   				<fieldset class="filter-item">
   					<legend>Производители:</legend>
 
-  					<ul class="filter-checkbox-list">
+  					<ul class="filter-list filter-checkbox-list">
   						<li class="filter-option">
   							<input id="filter-bosch" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" checked>
   							<label for="filter-bosch">Bosch</label>
@@ -163,7 +167,7 @@
   				<fieldset class="filter-item border-none">
   					<legend>Питание:</legend>
 
-  					<ul class="filter-radio-list">
+  					<ul class="filter-list filter-radio-list">
   						<li class="filter-option">
   							<input id="filter-rechargeable" class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="rechargeable" checked>
   							<label for="filter-rechargeable">Аккумуляторные</label>
@@ -355,15 +359,15 @@
   				</li>
 
   				<li class="pagination-item">
-  					<a href="#">2</a>
+  					<a href="blank.html">2</a>
   				</li>
 
   				<li class="pagination-item">
-  					<a href="#">3</a>
+  					<a href="blank.html">3</a>
   				</li>
 
   				<li class="pagination-item pagination-item-next">
-  					<a href="#">Следующая</a>
+  					<a href="blank.html">Следующая</a>
   				</li>
   			</ul>
   			<!-- /pagination -->
@@ -441,7 +445,7 @@
 
         <div class="footer-feedback">
           <p>Обратная связь: 
-            <a class="footer-sub-link" href="#"><br>mail@htmlacademy.ru</a></p>
+            <a class="footer-sub-link" href="blank.html"><br>mail@htmlacademy.ru</a></p>
         </div>
 
         <div class="footer-designed">
@@ -458,17 +462,15 @@
 
   <!-- Modal -->
   <!-- Product-add -->
-  <section class="product-add">
+  <section class="modal product-add">
     <h2>Товар добавлен в корзину!</h2>
 
     <div class="product-add-buttons">
-      <a class="button" href="#">Оформить заказ</a>
-      <a class="button button-continue" href="#">Продолжить покупки</a>
+      <a class="button" href="blank.html">Оформить заказ</a>
+      <a class="button button-continue" href="blank.html">Продолжить покупки</a>
     </div>
 
-    <button class="close-button">
-      <img src="img/icons-svg/close.svg" width="21" height="21" alt="Закрить окно">
-    </button>
+    <button class="modal-close" type="button" aria-label="Закрить"></button>
   </section>
   <!-- /Product-add -->
   <!-- /Modal -->
