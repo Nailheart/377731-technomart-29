@@ -780,8 +780,8 @@ img	{
 
 .range-list {
 	display: grid;
-	grid-template-rows: 123px 123px 123px;
-	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: repeat(3, 123px);
+	grid-template-columns: repeat(3, 300px);
 	grid-gap: 20px;
 
 	margin: 0;
@@ -894,11 +894,6 @@ img	{
 }
 
 .range-list .discounts {
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 2;
-
 	background-color: var(--discounts-bg);
 }
 
@@ -913,11 +908,6 @@ img	{
 }
 
 .range-list .delivery {
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 3;
-	grid-row-end: 3;
-
 	background-color: var(--delivery-bg);
 }
 
@@ -1071,6 +1061,49 @@ img	{
 
 .slider-prev:hover:before {
 	color: var(--basic-red);
+}
+
+/* slider dots */
+.owl-dots {
+	text-align: center;
+
+	position: absolute;
+	left: 50%;
+	bottom: 36px;
+
+	transform: translateX(-50%);
+}
+
+.owl-carousel button.owl-dot {
+	width: 10px;
+	height: 10px;
+
+	margin-right: 10px;
+
+	background-color: var(--white);
+	border-radius: 50%;
+
+	position: relative;
+}
+
+.owl-carousel button.owl-dot:last-child {
+	margin-right: 0;
+}
+
+.owl-carousel button.active:before {
+	content: "";
+
+	width: 6px;
+	height: 6px;
+
+	background-color: var(--basic-red);
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
 }
 
 /****************************************/
