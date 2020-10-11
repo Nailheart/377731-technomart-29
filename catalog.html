@@ -23,7 +23,9 @@
         </a>
 
         <div class="search-field">
-        	<input class="search-input" type="text" placeholder="Поиск:">
+          <form action="#">
+            <input class="search-input" type="text" placeholder="Поиск:">
+          </form>
         </div>
 
         <a class="sub-nav-button bookmarks" href="blank.html">Закладки: 0</a>
@@ -192,13 +194,14 @@
   			<!-- sort-setting -->
   			<div class="sort-setting">
   				<span class="sort-setting-title">Сортировка:</span>
-  				<span class="sort-setting-item sort-setting-active">По цене</span>
-  				<span class="sort-setting-item">По типу</span>
-  				<span class="sort-setting-item">По функционалу</span>
+
+          <button class="sort-setting-item sort-setting-active">По цене</button>
+          <button class="sort-setting-item">По типу</button>
+          <button class="sort-setting-item">По функционалу</button>
 
   				<div class="button-box">
-  					<button class="button-sort up-sort button-sort-active" type="button"></button>
-  					<button class="button-sort down-sort" type="button"></button>
+  					<button class="button-sort up-sort button-sort-active" type="button" aria-label="Сначала дорогие"></button>
+  					<button class="button-sort down-sort" type="button" aria-label="Сначала дешевые"></button>
   				</div>
   			</div>
   			<!-- /sort-setting -->

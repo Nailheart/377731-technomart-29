@@ -1,4 +1,36 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
+  /*
+    Открываем модальные окна
+  */
+  $('.button-write-us').click(function(event) {
+    event.preventDefault();
+
+    $('.write-us').css('display', 'block');
+  });
+
+  $('.about-map-link').click(function(event) {
+    event.preventDefault();
+
+    $('.modal-map').css('display', 'block');
+  });
+
+  $('.buy-button').click(function(event) {
+    event.preventDefault();
+
+    $('.product-add').css('display', 'block');
+  });
+
+  // Скрываем модальные окна
+  $('.modal-close').click(function() {
+    $('.modal').css('display', 'none');
+  });
+
+  $('.button-continue').click(function() {
+    event.preventDefault();
+
+    $('.modal').css('display', 'none');
+  });
 
   /*
     Первый слайдер

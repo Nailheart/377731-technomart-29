@@ -25,7 +25,9 @@
         </a>
 
         <div class="search-field">
-          <input class="search-input" type="text" placeholder="Поиск:">
+          <form action="#">
+            <input class="search-input" type="text" placeholder="Поиск:">
+          </form>
         </div>
 
         <a class="sub-nav-button bookmarks" href="blank.html">Закладки: 0</a>
@@ -124,7 +126,7 @@
             </ul>
 
             <div class="slider-control">
-              <button class="slider-prev">Предыдущий слайд</button>
+              <button class="slider-prev" tabindex="0">Предыдущий слайд</button>
               <button class="slider-next">Следующий слайд</button>
             </div>
           </li>
@@ -158,7 +160,7 @@
         <ul class="product-list">
           <li class="product-list-item">
             <div class="product-list-img">
-              <img src="img/products/bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/products/bfg-9000.jpg" width="184" height="164" alt="">
             </div>
 
             <div class="cart-buttons">
@@ -174,7 +176,7 @@
 
           <li class="product-list-item new">
             <div class="product-list-img">
-              <img src="img/products/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/products/bfg-3000.jpg" width="127" height="112" alt="">
             </div>
 
             <div class="cart-buttons">
@@ -190,7 +192,7 @@
 
           <li class="product-list-item">
             <div class="product-list-img">
-              <img src="img/products/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/products/bfg-6000.jpg" width="144" height="128" alt="">
             </div>
 
             <div class="cart-buttons">
@@ -206,7 +208,7 @@
 
           <li class="product-list-item new">
             <div class="product-list-img">
-              <img src="img/products/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/products/bfg-2000.jpg" width="127" height="112" alt="">
             </div>
 
             <div class="cart-buttons">
@@ -446,19 +448,19 @@
         <div class="flex-container">
           <div class="input-box">
             <label for="name">Ваше имя:</label>
-            <input id="name" class="user-input" name="name" type="text" placeholder="Имя Фамилия">
+            <input id="name" class="user-input" name="name" type="text" placeholder="Имя Фамилия" required>
           </div>
 
           <div class="input-box">
             <label for="email">Ваш e-mail:</label>
-            <input id="email" class="user-input" name="email" type="email" placeholder="email@example.com">
+            <input id="email" class="user-input" name="email" type="email" placeholder="email@example.com" required>
           </div>
         </div>
         <!-- /flex-container -->
 
         <div class="message-box">
           <label for="message">Текст письма:</label>
-          <textarea id="message" class="user-input message" name="message" rows="4" placeholder="В свободной форме"></textarea>
+          <textarea id="message" class="user-input message" name="message" rows="4" placeholder="В свободной форме" required></textarea>
         </div>
       </div>
       <!-- /form-container -->
