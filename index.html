@@ -26,7 +26,7 @@
 
         <div class="search-field">
           <form action="#">
-            <input class="search-input" type="text" placeholder="Поиск:">
+            <input class="search-input" type="search" placeholder="Поиск:">
           </form>
         </div>
 
@@ -440,7 +440,7 @@
   <section class="modal write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
 
-    <form class="feedback-form" action="#">
+    <form class="feedback-form" method="get" action="#">
       <!-- form-container -->
       <div class="form-container">
 
@@ -448,19 +448,19 @@
         <div class="flex-container">
           <div class="input-box">
             <label for="name">Ваше имя:</label>
-            <input id="name" class="user-input" name="name" type="text" placeholder="Имя Фамилия" required>
+            <input id="name" class="user-input" name="name" type="text" placeholder="Имя Фамилия">
           </div>
 
           <div class="input-box">
             <label for="email">Ваш e-mail:</label>
-            <input id="email" class="user-input" name="email" type="email" placeholder="email@example.com" required>
+            <input id="email" class="user-input" name="email" type="email" placeholder="email@example.com">
           </div>
         </div>
         <!-- /flex-container -->
 
         <div class="message-box">
           <label for="message">Текст письма:</label>
-          <textarea id="message" class="user-input message" name="message" rows="4" placeholder="В свободной форме" required></textarea>
+          <textarea id="message" class="user-input message" name="message" rows="4" placeholder="В свободной форме"></textarea>
         </div>
       </div>
       <!-- /form-container -->
