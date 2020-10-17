@@ -103,7 +103,7 @@
           <!-- Slider -->
           <li class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
-            <ul class="owl-carousel">
+            <ul>
               <!-- first slide -->
               <li class="slider-item first-slide">
                 <div class="slide-title">
@@ -126,8 +126,13 @@
             </ul>
 
             <div class="slider-control">
-              <button class="slider-prev" tabindex="0">Предыдущий слайд</button>
-              <button class="slider-next">Следующий слайд</button>
+              <button class="slider-prev" aria-label="Предыдущий слайд"></button>
+              <button class="slider-next" aria-label="Следующий слайд"></button>
+            </div>
+
+            <div class="slider-dots">
+              <button class="slider-dot slider-dot-active" aria-label="Первый слайд"></button>
+              <button class="slider-dot" aria-label="Второй слайд"></button>
             </div>
           </li>
           <!-- /Slider -->
@@ -498,8 +503,6 @@
   <!-- /Product-add -->
   <!-- /Modal -->
 
-  <script src="js/jquery/jquery-3.5.1.min.js"></script>
-  <script src="js/owl-carousel/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

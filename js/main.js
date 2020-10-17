@@ -21,8 +21,12 @@ const message = feedbackForm.querySelector('.message');
 
 // Слайдер секции services
 const buttonList = document.querySelectorAll('.slider-services-button');
-let slideTitle = document.querySelector('.slider-services-title');
-let slideDesc = document.querySelector('.slider-services-description');
+const slideTitle = document.querySelector('.slider-services-title');
+const slideDesc = document.querySelector('.slider-services-description');
+
+const deliveryButton = document.querySelector('.delivery-btn');
+const guaranteeButton = document.querySelector('.guarantee-btn');
+const creditButton = document.querySelector('.credit-btn');
 
 // localStorage
 let isStorageSupport = true;
@@ -113,32 +117,18 @@ window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     if (feedbackForm.classList.contains('modal-show')) {
       evt.preventDefault();
+
       feedbackForm.classList.remove('modal-show');
       feedbackForm.classList.remove('modal-error');
     }
+
+    popupMap.classList.remove('modal-show');
+    popupProductAdd.classList.remove('modal-show');
   }
 });
 
 /*
-  Первый слайдер
-*/
-$('.owl-carousel').owlCarousel({
-  items: 1,
-  loop: true,
-});
-
-const owl = $('.owl-carousel');
-owl.owlCarousel();
-
-$('.slider-next').click(function() {
-  owl.trigger('next.owl.carousel', [0]);
-});
-$('.slider-prev').click(function() {
-  owl.trigger('prev.owl.carousel', [0]);
-});
-
-/*
-  Второй слайдер
+  Cлайдер
 */
 // Удаляем класс активного состояния кнопки у слайдера
 function removeActive() {
@@ -154,21 +144,21 @@ for (let i = 0; i < buttonList.length; i++) {
   });
 }
 
-$('.delivery-btn').click(function(evt) {
+deliveryButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
   slideTitle.innerHTML = 'Доставка';
   slideDesc.innerHTML = 'Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!'; 
 });
 
-$('.guarantee-btn').click(function(evt) {
+guaranteeButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
   slideTitle.innerHTML = 'Гарантия';
   slideDesc.innerHTML = 'Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br>гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.';
 });
 
-$('.credit-btn').click(function(evt) {
+creditButton.addEventListener('click', function(evt) {
   evt.preventDefault();
 
   slideTitle.innerHTML = 'Кредит  ';
