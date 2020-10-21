@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Техномарт</title>
 
-  <!-- Slider -->
-  <link rel="stylesheet" href="js/owl-carousel/owl.carousel.min.css">
-
   <!-- Normalize -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.min.css">
@@ -21,19 +19,21 @@
     <div class="sub-nav">
       <div class="container">
         <a class="logo header-logo" href="">
-          <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип">
+          <img src="img/logo/logo.svg" width="108" height="18" alt="Логотип">
         </a>
 
         <div class="search-field">
           <form action="#">
-            <input class="search-input" type="search" placeholder="Поиск:">
+            <label for="search" aria-label="Поле поиск">
+              <input id="search" class="search-input" type="search" placeholder="Поиск:">
+            </label>
           </form>
         </div>
 
-        <a class="sub-nav-button bookmarks" href="blank.html">Закладки: 0</a>
-        <a class="sub-nav-button basket" href="blank.html">Корзина: 0</a>
+        <a class="sub-nav-button bookmarks" href="#">Закладки: 0</a>
+        <a class="sub-nav-button basket" href="#">Корзина: 0</a>
 
-        <a class="checkout" href="blank.html">Оформить заказ</a>
+        <a class="checkout" href="#">Оформить заказ</a>
       </div>
       <!-- /container -->
     </div>
@@ -52,8 +52,8 @@
 
         <div class="login-info">
           <div class="authorization-user">
-            <a class="login-link" href="blank.html">Войти</a>
-            <a class="registration-link" href="blank.html">Регистрация</a>
+            <a class="login-link" href="#">Войти</a>
+            <a class="registration-link" href="#">Регистрация</a>
           </div>
         </div>
 
@@ -65,12 +65,12 @@
     <nav class="nav container">
       <ul class="nav-list">
         <li><a class="nav-list-link" href="">Главная</a></li>
-        <li><a class="nav-list-link" href="blank.html">Компания</a></li>
+        <li><a class="nav-list-link" href="#">Компания</a></li>
         <li><a class="nav-list-link" href="catalog.html">Каталог</a></li>
-        <li><a class="nav-list-link" href="blank.html">Новости</a></li>
-        <li><a class="nav-list-link" href="blank.html">Спецпредложения</a></li>
-        <li><a class="nav-list-link" href="blank.html">Доставка</a></li>
-        <li><a class="nav-list-link" href="blank.html">Контакты</a></li>
+        <li><a class="nav-list-link" href="#">Новости</a></li>
+        <li><a class="nav-list-link" href="#">Спецпредложения</a></li>
+        <li><a class="nav-list-link" href="#">Доставка</a></li>
+        <li><a class="nav-list-link" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -87,17 +87,17 @@
         <ul class="range-list">
           <li class="range-list-item materials new">
             <h2>Материалы</h2>
-            <a href="blank.html">на любой вкус</a>
+            <a href="#">на любой вкус</a>
           </li>
 
           <li class="range-list-item tools">
             <h2>Инструмент</h2>
-            <a href="blank.html">На все случаи</a>
+            <a href="#">На все случаи</a>
           </li>
 
           <li class="range-list-item technics">
             <h2>Техника</h2>
-            <a href="blank.html">Для стройки</a>
+            <a href="#">Для стройки</a>
           </li>
 
           <!-- Slider -->
@@ -139,12 +139,12 @@
 
           <li class="range-list-item discounts">
             <h2>Скидки 50%</h2>
-            <a href="blank.html">На 350 товаров</a>
+            <a href="#">На 350 товаров</a>
           </li>
 
           <li class="range-list-item delivery">
             <h2>Доставка</h2>
-            <a href="blank.html">Бесплатно</a>
+            <a href="#">Бесплатно</a>
           </li>
         </ul>
         <!-- /range-list -->
@@ -159,71 +159,71 @@
         <div class="section-title">
           <h2>Популярные товары:</h2>
 
-          <a class="button" href="blank.html">все популярные товары</a>
+          <a class="button" href="#">все популярные товары</a>
         </div>
 
         <ul class="product-list">
           <li class="product-list-item">
             <div class="product-list-img">
-              <img src="img/products/bfg-9000.jpg" width="184" height="164" alt="">
+              <img src="img/products/bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
             </div>
 
             <div class="cart-buttons">
-              <a class="buy-button" href="blank.html">Купить</a>
-              <a class="bookmarks-button" href="blank.html">В закладки</a>
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmarks-button" href="#">В закладки</a>
             </div>
 
             <h3>Перфоратор BOSCH  BFG 9000</h3>
 
             <p class="product-old-price">32500 Р.</p>
-            <a class="product-price" href="blank.html">25500 Р.</a>
+            <a class="product-price" href="#">25500 Р.</a>
           </li>
 
           <li class="product-list-item new">
             <div class="product-list-img">
-              <img src="img/products/bfg-3000.jpg" width="127" height="112" alt="">
+              <img src="img/products/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
             </div>
 
             <div class="cart-buttons">
-              <a class="buy-button" href="blank.html">Купить</a>
-              <a class="bookmarks-button" href="blank.html">В закладки</a>
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmarks-button" href="#">В закладки</a>
             </div>
 
             <h3>Перфоратор BOSCH  BFG 3000</h3>
 
             <p class="product-old-price">22500 Р.</p>
-            <a class="product-price" href="blank.html">15500 Р.</a>
+            <a class="product-price" href="#">15500 Р.</a>
           </li>
 
           <li class="product-list-item">
             <div class="product-list-img">
-              <img src="img/products/bfg-6000.jpg" width="144" height="128" alt="">
+              <img src="img/products/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
             </div>
 
             <div class="cart-buttons">
-              <a class="buy-button" href="blank.html">Купить</a>
-              <a class="bookmarks-button" href="blank.html">В закладки</a>
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmarks-button" href="#">В закладки</a>
             </div>
 
             <h3>Перфоратор BOSCH  BFG 6000</h3>
 
             <p class="product-old-price">30500 Р.</p>
-            <a class="product-price" href="blank.html">25500 Р.</a>
+            <a class="product-price" href="#">25500 Р.</a>
           </li>
 
           <li class="product-list-item new">
             <div class="product-list-img">
-              <img src="img/products/bfg-2000.jpg" width="127" height="112" alt="">
+              <img src="img/products/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
             </div>
 
             <div class="cart-buttons">
-              <a class="buy-button" href="blank.html">Купить</a>
-              <a class="bookmarks-button" href="blank.html">В закладки</a>
+              <a class="buy-button" href="#">Купить</a>
+              <a class="bookmarks-button" href="#">В закладки</a>
             </div>
 
             <h3>Перфоратор BOSCH  BFG 2000</h3>
 
-            <a class="product-price" href="blank.html">12500 Р.</a>
+            <a class="product-price" href="#">12500 Р.</a>
           </li>
         </ul>
       </div>
@@ -237,55 +237,55 @@
         <div class="section-title">
           <h2>Популярные производители:</h2>
 
-          <a class="button" href="blank.html">все производители</a>
+          <a class="button" href="#">все производители</a>
         </div>
 
         <ul class="manufacturer-list">
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/Bosch.png" alt="Bosch">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/bosch.png" width="126" height="37" alt="Bosch">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/Makita.png" alt="Makita">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/DeWALT.png" alt="DeWalt">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/dewalt.png" width="146" height="44" alt="DeWalt">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/Интерскол.png" alt="Интерскол">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/interskol.png" width="200" height="76" alt="Интерскол">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/Hitachi.png" alt="Hitachi">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/LG.png" alt="LG">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/lg.png" width="121" height="73" alt="LG">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/AEG.png" alt="AEG">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/aeg.png" width="151" height="96" alt="AEG">
             </a>
           </li>
 
           <li>
-            <a class="manufacturer-list-item" href="blank.html">
-              <img src="img/popular-manufacturers/Metabo.png" alt="Metabo">
+            <a class="manufacturer-list-item" href="#">
+              <img src="img/popular-manufacturers/metabo.png" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -346,7 +346,7 @@
             <li class="transport-companies-item">ЖелДорЭкспедиция</li>
           </ul>
 
-          <a class="button about-button" href="blank.html">Подробнее о компании</a>
+          <a class="button about-button" href="#">Подробнее о компании</a>
         </div>
         <!-- /about-description -->
 
@@ -363,7 +363,7 @@
             </a>
           </div>
 
-          <a class="button button-write-us" href="blank.html">Заблудились? Напишите нам!</a>
+          <a class="button button-write-us" href="#">Заблудились? Напишите нам!</a>
         </div>
         <!-- /about-contacs -->
       </div>
@@ -381,7 +381,7 @@
         
         <div class="footer-contacts">
           <a class="logo footer-logo" href="">
-            <img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип">
+            <img src="img/logo/logo.svg" width="138" height="23" alt="Логотип">
           </a>
 
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
@@ -390,18 +390,18 @@
 
         <div class="footer-links">
           <ul class="footer-nav">
-            <li><a class="footer-nav-link" href="blank.html">Компания</a></li>
-            <li><a class="footer-nav-link" href="blank.html">Новости</a></li>
+            <li><a class="footer-nav-link" href="#">Компания</a></li>
+            <li><a class="footer-nav-link" href="#">Новости</a></li>
             <li><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
-            <li><a class="footer-nav-link" href="blank.html">Доставка</a></li>
-            <li><a class="footer-nav-link" href="blank.html">Контакты</a></li>
+            <li><a class="footer-nav-link" href="#">Доставка</a></li>
+            <li><a class="footer-nav-link" href="#">Контакты</a></li>
           </ul>
 
           <ul class="footer-sub-nav">
-            <li><a class="footer-sub-nav-link" href="blank.html">Материалы</a></li>
-            <li><a class="footer-sub-nav-link" href="blank.html">Техника</a></li>
-            <li><a class="footer-sub-nav-link" href="blank.html">Инструмент</a></li>
-            <li><a class="footer-sub-nav-link" href="blank.html">Спецпредложения</a></li>
+            <li><a class="footer-sub-nav-link" href="#">Материалы</a></li>
+            <li><a class="footer-sub-nav-link" href="#">Техника</a></li>
+            <li><a class="footer-sub-nav-link" href="#">Инструмент</a></li>
+            <li><a class="footer-sub-nav-link" href="#">Спецпредложения</a></li>
           </ul>
         </div>
 
@@ -425,7 +425,7 @@
 
         <div class="footer-feedback">
           <p>Обратная связь: 
-            <a class="footer-sub-link" href="blank.html"><br>mail@htmlacademy.ru</a></p>
+            <a class="footer-sub-link" href="#"><br>mail@htmlacademy.ru</a></p>
         </div>
 
         <div class="footer-designed">
@@ -494,8 +494,8 @@
     <h2>Товар добавлен в корзину!</h2>
 
     <div class="product-add-buttons">
-      <a class="button" href="blank.html">Оформить заказ</a>
-      <a class="button button-continue" href="blank.html">Продолжить покупки</a>
+      <a class="button" href="#">Оформить заказ</a>
+      <a class="button button-continue" href="#">Продолжить покупки</a>
     </div>
 
     <button class="modal-close" type="button" aria-label="Закрить"></button>
